@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js"></script>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+	
+
+var person = { "persons" : [
+
+{"name":"Ankit", "lastname":"Srivastava", "dob":"22-12-96"},
+{"name":"Mukul", "lastname":"Pandey", "dob":"08-01-95"},
+{"name":"shradha", "lastname":"Srivastava", "dob":"09-11-96"},
+{"name":"Ankit", "lastname":"Srivastava", "dob":"22-12-96"}
+
+	]
+}
+	
+	var i = 0;
+document.writeln("<center> <h1>Student Data </h1> </center>");
+	for (var i = 0; i < person.persons.length; i++) {
+
+		   document.writeln("<center><table border = '1' width = 500 ></center>");
+		document.writeln("<tr><th>First name <th> <td width = 200>" +person.persons[i].name+ "</td></tr>");
+		document.writeln("<tr><th>Last name <th> <td width = 200>" +person.persons[i].lastname+ "</td></tr>");
+		document.writeln("<tr><th>Date of Birth <th> <td width = 200>" +person.persons[i].dob+ "</td></tr>");
+
+	}
+
+
+
+</script>
+
+
+</body>
+</html>

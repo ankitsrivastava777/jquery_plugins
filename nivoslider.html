@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="nivo-slider/jquery.nivo.slider.js"></script>
+
+</head>
+<body>
+
+
+    <div id="wrapper">
+        <div class="slider-wrapper theme-default">
+            <div id="jquery-slider-demo" class="nivoSlider">
+                <img src="nivo-slider/demo/images/toystory.jpg" alt="The slide 1" />
+                <a href="#"><img src="nivo-slider/demo/images/up.jpg" alt="The slide 2" title="The caption comes here" /></a>
+                <img src="nivo-slider/demo/images/walle.jpg" alt="The slide 3" data-transition="slideInLeft" />
+                <img src="nivo-slider/demo/images/nemo.jpg"  alt="The slide 4" title="#htmlcaption" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>And you may use  </strong> <em>HTML</em> captions with <a href="#">links</a>. 
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="js/jquery-nivo-slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#jquery-slider-demo').nivoSlider({
+
+            effect: 'random',
+slices: 150,
+boxCols: 8,
+boxRows: 4,
+animSpeed: 500,
+pauseTime: 3000,
+startSlide: 0,
+directionNav: true,
+controlNav: true,
+controlNavThumbs: false,
+pauseOnHover: true,
+manualAdvance: false,
+prevText: 'Prev',
+nextText: 'Next',
+randomStart: false,
+beforeChange: function(){},
+afterChange: function(){},
+slideshowEnd: function(){},
+lastSlide: function(){},
+afterLoad: function(){}
+
+
+
+        });
+    });
+    </script>
+
+
+
+</body>
+</html>
